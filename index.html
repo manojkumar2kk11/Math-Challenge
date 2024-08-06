@@ -9,31 +9,66 @@
     <!--Header-->
     <h1 class="heading">
         <img class="logo" src="" alt="logo"> Math Challenge
-    </h1>
-    
+    </h1>  
     <!--Section-->
     <section id="hero">
-    </section>
-    
+    </section> 
     <!--div challenge area-->
     <div class="challenge-area">
+        <!--Each Levels-->
         <div class="levels-area">
-
+            <h3>Levels</h3>
+            <button data-type="level1" class="btn">
+                <i>Level 1</i>
+            </button>
+            <button data-type="level2" class="btn">
+                <i>Level 2</i>
+            </button>
+            <button data-type="level3" class="btn">
+                <i>Level 3</i>
+            </button>
+            <button data-type="level4" class="btn">
+                <i>Level 4</i>
+            </button>
         </div>
+        <!--Equation div-->
         <div class="equation-area">
-
+            <h3>Solve the Equation</h3>
+            <span>x<sup id="equ1">2</sup></span>
+            <span>+</span>
+            <span>y<sup id="equ2">2</sup></span>
+            <span>-</span>
+            <span>z</span>
         </div>
-        <div class="levels-area">
-
-        </div>
+        <!--Equation assigment div-->
         <div class="assignment-area">
-
+            <span>where </span>
+            <span>x=</span>
+            <span id="assign1">2</span>
+            <span>y=</span>
+            <span id="assign2">4</span>
+            <span>z=</span>
+            <span id="assign3">6</span>
         </div>
+        <!--solution area-->
         <div class="solution-area">
-
+            <span id="operand1">x<sup>2</sup></span>
+            <span id="operand2">+</span>
+            <span id="operand3">y<sup>2</sup></span>
+            <span id="operand4">-</span>
+            <span id="operand5">z</span>
+            <span>=</span>
+            <p class="enter-answer">Enter Answer:</p>
+            <input id="answer" type="number">
         </div>
-    </div>
-
-    
+        <!--Submit result button-->
+        <button data-type="submit" class="btn">Submit</button>
+        <!--Result area-->
+        <div class="result-area">
+            <p class="results">Correct Answers <span id="correctanswer">0</span></p>
+            <p class="results">Wrong Answers <span id="wronganswer">0</span></p>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </div>   
 </body>
 </html>
