@@ -71,4 +71,50 @@ function displayEquationQuestion(operand1, operand2,operand3,level) {
 
 }
 
+/**
+ * The function is called when the submit button is pressed or whent he key down in the answer text box.
+ * This function call calculate equation function and verify the result
+ */
+function result() {
+    // Get the answer text value and compare with calculated value. 
+	let operatorresult = parseInt(document.getElementById("answer").value);
+	let calculatedresult = calculateEquationAnswer();
+	let isCorrect = operatorresult === calculatedresult[0];
+    // If the answer is correct alert saying well done or answer is wrong then give the right answer
+	if (isCorrect) {
+		alert("Your answer is correct well done");
+		let prevScore = parseInt(document.getElementById("correctanswer").innerText);
+		document.getElementById("correctanswer").innerText = ++prevScore;
+	} else {
+		alert(`Your answer is ${operatorresult}. The correct answer was ${calculatedresult[0]}!`);
+		let prevScore = parseInt(document.getElementById("wronganswer").innerText);
+		document.getElementById("wronganswer").innerText = ++prevScore;
+	}
+
+	solveEquation(calculatedresult[1]);
+
+}
+
+/**
+ * The function is called when the result function is initiated.
+ * This function calculate the equation.
+ */
+function calculateEquationAnswer() {
+    // Get the operand element
+	let operand1 = document.getElementById("operand1");
+	let operand2 = document.getElementById("operand3");
+    let operand3 = document.getElementById("operand5");
+    // Get the element value with child nodes
+    let valueX=parseInt(operand1.childNodes[0].nodeValue);
+    let valueY=parseInt(operand2.childNodes[0].nodeValue);
+    let valueZ=parseInt(operand3.childNodes[0].nodeValue);
+    // Quaery the sup element and parse to int.
+	supElement = operand1.querySelector('sup');
+	let level=parseInt(supElement.textContent);
+    // Return the value of the eqautuion and last level used.
+    return [(Math.pow(valueX,level) + Math.pow(valueY,level)-valueZ),level];
+
+}
+
+
 
