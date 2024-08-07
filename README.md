@@ -53,7 +53,11 @@ No error were returned when passing through website: https://jigsaw.w3.org/css-v
 </details>  
 
 ## Javascript
+No error were returned when passing through website: https://jshint.com/
 
+<details><summary>Java script</summary>
+<img src="assets/images/jsscript_checker.png">
+</details>  
 
 # Browser compatability
 
