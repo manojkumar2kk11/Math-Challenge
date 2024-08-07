@@ -32,12 +32,86 @@ Educational institutions searching for engaging math resources.
 The Home page shows thw equation and assignment to soleve the eqaution..
 ![Home screen](assets/images/home_page.png)
 # Performance
+Tested the performance by using Google Lighthouse in Google Chrome Developer Tools. <br>
+
+<details><summary>Home Page</summary>
+<img src="assets/images/home_performance.png">
+</details>
+
 # Validator Test
 ## HTML
+ No error were returned when passing through website: https://validator.w3.org/#validate_by_input
+<details><summary>Home</summary>
+<img src="assets/images/home_Checker.png">
+</details>
+
 ## CSS
+No error were returned when passing through website: https://jigsaw.w3.org/css-validator/#validate_by_input
+
+<details><summary>CSS style</summary>
+<img src="assets/images/cssStyle_Checker.png">
+</details>  
+
+## Javascript
+
+
 # Browser compatability
+
+Tested on the following browsers: <br>
+Google Chrome <br>
+Microsoft Egde 
+
 # Bugs
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | Level 3 and Level 4 power was same | Beacuse same id  was assigned, changed the id |
+| The light house accessibility is less than 90, because of the not following the sematic order of the heading | Used the heading in the  sematic order |
+
+# Deployment
+
+The master branch of this repository contains the most up-to-date version and has been utilized for the deployed version of the site. This project was created using the Code Institute student template.
+
+Code Institute Template for CodeAnywhere
+
+  - Click Use This Template button.
+  - Give your repository a name, and description.
+  - Open CodeAnywhere EDI and log into your account.
+  - Click New Workspace button.
+  - Create a workspace from your project repository by creating a clone.
+Creating a clone
+
+  - From the repository, click Code.
+  - In the Clone >> HTTPS section, copy the clone URL for the repository.
+  - Paste a link into the designated area on the CodeAnywhere.
+
+Forking
+
+  - From the repository, click Fork.
+  - Give your repository a name.
+  - Click Create fork.
+
+# Technologies
+  - HTML 
+  - CSS 
+  - JavaScript 
+
+# Credits
+
+## Content
+
+ The structure and page format of the website is inspired from the Love Maths.
+
+## Media
+
+All the image are used from the website : https://www.pexels.com/ <br>
+All the icon are used from the website: https://fontawesome.com/ <br>
+Responsive screen is capture from the website: https://ui.dev/amiresponsive
+
+## Fonts
+
+ Some the font are imported from the website :https://fonts.google.com/
+
+## Acknowledgements
+
+I would like to thank, Harry(Mentor) for support for my project in reviewing and providing some guides.

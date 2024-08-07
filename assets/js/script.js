@@ -68,7 +68,6 @@ function displayEquationQuestion(operand1, operand2,operand3,level) {
     assignXValue.innerHTML= `${operand1}<sup>${level}</sup>`;
     assignYValue.innerHTML= `${operand2}<sup>${level}</sup>`;
     assignZValue.innerHTML= `${operand3}`;
-
 }
 
 /**
@@ -92,7 +91,6 @@ function result() {
 	}
 
 	solveEquation(calculatedresult[1]);
-
 }
 
 /**
@@ -109,11 +107,10 @@ function calculateEquationAnswer() {
     let valueY=parseInt(operand2.childNodes[0].nodeValue);
     let valueZ=parseInt(operand3.childNodes[0].nodeValue);
     // Quaery the sup element and parse to int.
-	supElement = operand1.querySelector('sup');
+	let supElement = operand1.querySelector('sup');
 	let level=parseInt(supElement.textContent);
     // Return the value of the eqautuion and last level used.
     return [(Math.pow(valueX,level) + Math.pow(valueY,level)-valueZ),level];
-
 }
 
 
