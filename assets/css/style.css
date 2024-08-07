@@ -47,6 +47,21 @@ h1,h2,h3 {
     padding: 1px 0;
 }
 
+.name-input {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#name {
+    color: #060315;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    font-size: 1.2rem;
+}
+
 .levels-area{
     width: 75%;
     margin: 5px auto;
