@@ -12,15 +12,7 @@ body {
 }
 /*Common heading styles*/
 
-h1,h2,h3 {
-    font-family: 'Roboto+Serif', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #0f0f10;
-    text-align: center;
-    font-size: 2.5rem;
-    
-}
+
 
 .heading {
     font-family: 'Roboto+Serif', sans-serif;
@@ -28,13 +20,23 @@ h1,h2,h3 {
     letter-spacing: 1px;
     color: #0f0f10;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
+}
+
+h1,h2,h3 {
+    font-family: 'Roboto+Serif', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0f0f10;
+    text-align: center;
+    font-size: 2rem;
+    
 }
 
 /*Common logo styles*/
 .logo {
     height: 60px;
-    padding-right: 5px;
+    padding-right: 2px;
 }
 
 /*Math challenge area*/
@@ -42,14 +44,19 @@ h1,h2,h3 {
 .challenge-area {
     background-color: #d5de8c;
     box-sizing: border-box;  
-    padding: 5px 0;
+    padding: 1px 0;
+}
+
+.levels-area{
+    width: 75%;
+    margin: 5px auto;
 }
 
 .equation-area {
     width: 75%;
     font-size: 2rem;
     margin: auto;
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 .equation-area span {
@@ -60,23 +67,181 @@ h1,h2,h3 {
     width: 75%;
     font-size: 2rem;
     margin: auto;
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 .assignment-area span {
     padding: 0 5px;
 }
 
-
 .solution-area {
     width: 75%;
     font-size: 2rem;
     margin: auto;
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 .solution-area span {
     padding: 0 5px;
 }
+
+.result-area {
+    margin: 5px auto;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+#correctanswer {
+    font-weight: bold;
+}
+
+#wronganswer {
+    font-weight: bold;
+}
+
+.enter-answer {
+    display: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#answer {
+    border: none;
+    color: #320fd2;
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    font-size: 1.2rem;
+}
+
+.results {
+    display: inline-block;
+    padding: 25px;
+}
+
+/*Buttons*/
+.btnlevel{
+    width: 150px;
+    height: 40px;
+    font-family: 'Roboto+Serif', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+    margin-top: 25px;
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.btnlevel:active,
+.btnlevel:hover {
+    background-color: #0a8226;
+}
+
+.btnSub{
+    width: 150px;
+    height: 40px;
+    font-family: 'Roboto+Serif', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+    margin-top: 25px;
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.btnSub:active,
+.btnSub:hover {
+    background-color: #0a8226;
+}
+
+
+
+/*Media queries */
+
+@media (max-width: 414px) {
+    .levels-area{
+        width: 100%;
+    }
+
+    .equation-area{
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .equation-area span {
+        padding: 0;
+    }
+
+    .assignment-area{
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .assignment-area {
+        padding: 0;
+    }
+
+    .solution-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .solution-area span {
+        padding: 0;
+    }
+
+    .enter-answer {
+        display: block;
+    }
+
+    #answer{
+        display: block;
+        margin: 0 auto;
+    }
+    .btnSub {
+        margin-top: 0;
+    }
+
+    .result-area {
+        width: 100%;
+    }
+
+    .results {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .challenge-area {
+        height: 70vh;
+    }
+
+    .levels-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .equation-area{
+        padding: 10px 0;
+    }
+
+    .assignment-area{
+        padding: 10px 0;
+    }
+
+    .solution-area{
+        padding: 10px 0;
+    }
+
+}
+
 
 
