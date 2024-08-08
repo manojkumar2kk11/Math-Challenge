@@ -40,7 +40,10 @@ Tested the performance by using Google Lighthouse in Google Chrome Developer Too
 
 # Validator Test
 ## HTML
+ For an empty response in the answer text box, an alert message will be displayed, indicating "NaN" and the correct answer.
  No error were returned when passing through website: https://validator.w3.org/#validate_by_input
+ 
+
 <details><summary>Home</summary>
 <img src="assets/images/home_checker.png">
 </details>
