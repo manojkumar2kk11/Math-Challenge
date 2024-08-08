@@ -7,13 +7,9 @@ body {
     color: #151515ef;
     font-family: 'Roboto+Serif', san-serif;
     text-align: center;
-    background-color: white;
-   
+    background-color: white; 
 }
 /*Common heading styles*/
-
-
-
 .heading {
     font-family: 'Roboto+Serif', sans-serif;
     text-transform: uppercase;
@@ -29,8 +25,7 @@ h1,h2,h3 {
     letter-spacing: 1px;
     color: #0f0f10;
     text-align: center;
-    font-size: 2rem;
-    
+    font-size: 2rem; 
 }
 
 /*Common logo styles*/
@@ -40,7 +35,6 @@ h1,h2,h3 {
 }
 
 /*Math challenge area*/
-
 .challenge-area {
     background-color: #d5de8c;
     box-sizing: border-box;  
@@ -171,10 +165,7 @@ h1,h2,h3 {
     background-color: #0a8226;
 }
 
-
-
 /*Media queries */
-
 @media (max-width: 414px) {
     .levels-area{
         width: 100%;
@@ -255,7 +246,6 @@ h1,h2,h3 {
     .solution-area{
         padding: 10px 0;
     }
-
 }
 
 

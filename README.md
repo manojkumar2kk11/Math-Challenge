@@ -29,7 +29,7 @@ Educational institutions searching for engaging math resources.
 
 # Features
 ## Screen content
-The Home page shows thw equation and assignment to soleve the eqaution..
+The Home page shows thw equation and assignment to solve the eqaution..
 ![Home screen](assets/images/home_page.png)
 # Performance
 Tested the performance by using Google Lighthouse in Google Chrome Developer Tools. <br>
@@ -42,18 +42,18 @@ Tested the performance by using Google Lighthouse in Google Chrome Developer Too
 ## HTML
  No error were returned when passing through website: https://validator.w3.org/#validate_by_input
 <details><summary>Home</summary>
-<img src="assets/images/home_Checker.png">
+<img src="assets/images/home_checker.png">
 </details>
 
 ## CSS
 No error were returned when passing through website: https://jigsaw.w3.org/css-validator/#validate_by_input
 
 <details><summary>CSS style</summary>
-<img src="assets/images/cssStyle_Checker.png">
+<img src="assets/images/css_style_checker.png">
 </details>  
 
 ## Javascript
-No error were returned when passing through website: https://jshint.com/
+No error and one warning were returned when passing through website: https://jshint.com/
 
 <details><summary>Java script</summary>
 <img src="assets/images/jsscript_checker.png">
@@ -74,7 +74,7 @@ Microsoft Egde
 
 # Deployment
 
-The master branch of this repository contains the most up-to-date version and has been utilized for the deployed version of the site. This project was created using the Code Institute student template.
+The main branch of this repository contains the most up-to-date version and has been utilized for the deployed version of the site. This project was created using the Code Institute student template.
 
 Code Institute Template for CodeAnywhere
 
@@ -83,6 +83,12 @@ Code Institute Template for CodeAnywhere
   - Open CodeAnywhere EDI and log into your account.
   - Click New Workspace button.
   - Create a workspace from your project repository by creating a clone.
+
+Deployment
+  - Click the setting.
+  - Click the pages under the code and automation.
+  - Select the branch main and save. 
+
 Creating a clone
 
   - From the repository, click Code.
